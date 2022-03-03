@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1320">
+		<title>중고도서검색</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+				<!--검색슬라이드js-->
+				<script language="JavaScript">
+					<!--
+						$(document).ready(function() {
+							//사용할 배너
+							var $banner = $(".banner").find("ul");
+			
+							var $bannerWidth = $banner.children().outerWidth();//배너 이미지의 폭
+							var $bannerHeight = $banner.children().outerHeight(); // 높이
+							var $bannerLength = $banner.children().length;//배너 이미지의 갯수
+							var rollingId;
+			
+							//정해진 초마다 함수 실행
+							rollingId = setInterval(function() { rollingStart(); }, 3000);//다음 이미지로 롤링 애니메이션 할 시간차
+			
+							//마우스 오버시 롤링을 멈춘다.
+							banner.mouseover(function(){
+								//중지
+								clearInterval(rollingId);
+								$(this).css("cursor", "pointer");
+							});
+							//마우스 아웃되면 다시 시작
+							banner.mouseout(function(){
+								rollingId = setInterval(function() { rollingStart(); }, 3000);
+								$(this).css("cursor", "default");
+							});
+					
+							function rollingStart() {
+								$banner.css("width", $bannerWidth + "px");
+								$banner.css("height", $bannerHeight * $bannerLength + "px");
+								//alert(bannerHeight);
+								//배너의 좌측 위치를 옮겨 준다.
+								$banner.animate({top: - $bannerHeight + "px"}, 1500, function() { //숫자는 롤링 진행되는 시간이다.
+									//첫번째 이미지를 마지막 끝에 복사(이동이 아니라 복사)해서 추가한다.
+									$(this).append("<li>" + $(this).find("li:first").html() + "</li>");
+									//뒤로 복사된 첫번재 이미지는 필요 없으니 삭제한다.
+									$(this).find("li:first").remove();
+									//다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
+									$(this).css("top", 0);
+									//이 과정을 반복하면서 계속 롤링하는 배너를 만들 수 있다.
+								});
+							}
+						}); 
+					//-->  
+					</script>
+
+	</head>
+	<body>
+		<div class="header">
+			<h1><img src="images/header/logo_bg.png" alt=""></h1>
+			<h2><a href="javascript:return false;"><img src="images/header/logo.png" alt=""></a></h2>
+	</div>
+	<div id="gnb_wrap">
+		<ul id="gnb">
+			<li><a href="javascript:return false;">회사소개</a></li>
+			<li><a href="javascript:return false;">중고도서검색</a></li>
+			<li><a href="javascript:return false;">도서등록</a></li>
+			<li><a href="javascript:return false;">이벤트</a></li>
+			<li><a href="javascript:return false;">마이페이지</a></li>
+			<li><a href="javascript:return false;">고객센터</a></li>
+		</ul>
+	</div>
+
+	<div id="banner_wrap">
+		  <div class="banner_box">
+			<p class="banner_icon"><img src="images/banner/banner_icon.png" alt=""></p>
+			<p class="banner_title"><img src="images/banner/banner_title.png" alt=""></p>
+			<p class="banner_text">Search for used books</p>
+		 </div>
+	</div>	
+
+
+	<div id="section1"><!--도서통합검색-->
+		<h3>도서통합검색</h3>
+		<div class="section1_box">
+			<div class="search_box1">	
+				<form>
+					<input type="text">
+				</form>
+				<a href="javascript:return false;"><img src="images/section1/search.jpg" alt=""></a>
+			</div>
+			<div class="search_box2">
+				<div class="search_slide banner">
+					<ul>
+						<li><a href="javascript:return false;">중고 BEST ▼</a></li>
+						<li><a href="javascript:return false;">추천 PCIK 책소개 ▼</a></li>
+						<li><a href="javascript:return false;">베스트셀러 모음전 ▼</a></li>
+						<li><a href="javascript:return false;">히가시노 게이고 ▼</a></li>
+						<li><a href="javascript:return false;">최저가 도서 ▼</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+	<div id="section2_wrap"><!--Mobile search-->
+		<div class="section2">
+			<p class="section2_app" ><img src="images/section2/app.png" alt=""></p>
+			<div class="section2_box">
+				<p><img src="images/section2/search_text.png" alt=""></p>
+				<p class="section2_text">신규가입 및 첫도서등록을 하시면 푸짐한 쿠폰과 마일리지 혜택을 드립니다.</p>
+				<ul class="section2_Download">
+					<li><a href="javascript:return false;"><img src="images/section2/Download_2.jpg" alt=""></a></li>
+					<li><a href="javascript:return false;"><img src="images/section2/Download_1.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="section3"><!--북새록 베스트셀러 모음전 -->
+		<h4>북새록 베스트셀러 모음전</h4>
+		<div class="section3_A">
+			<p class="book_A"><img src="images/section3/book_A.jpg" alt=""></p>
+			<p class="section3_Atext1"><span>어린이라는 세계</span>  김소영 / 사계절</p>
+			<p class="section3_Atext2">어린이에 대해 생각할수록 우리의 세게는 넓어진다.
+				<br>우리 곁의,내안의,세상 속의 어린이를 쾌활하고 다정하고 신중하게 반기는 목소리 !</p>
+			<p class="section3_Atext3">이 책에는 저자 김소영의 어린이들과 만나며 발견한, 작고 약한 존재들이 분주하게 배우고 익히며
+				<br>자라나는 세계가 담겨 있다.그들은 모두가 통과해온 어린이이기도 하며, 동료 시민 이자 다음세대
+				<br>를 이루는 어린이이기도 하다.</p>
+			<div class="btn_A">
+				<p>모든 중고상품보기
+				<br><span><a href="javascript:return false;">총 44개 ▶</a></span></p>
+			</div>
+			<p class="section3_Atext4">정가 15,000원 -> <span>할인가 10,500원 (10% 할인 + 5% 추가적립)</span></p>
+		</div>
+
+		<div class="section3_B">
+			<p class="book_B"><img src="images/section3/book_B.jpg" alt=""></p>
+			<p class="section3_Btext1"><span>왜일하는가</span>  이나모리 가즈오 / 다산북스</p>
+			<p class="section3_Btext2">교세라를 세계 초일류기업으로 키운 이나모리 가즈오, 일본인들이 그를 
+				<br>'경영의 신'으로 부르는 것은 ‘왜 일해야 하는가?'에 대한 그의 통찰 때문이다 !</p>
+			<p class="section3_Btext3">『왜 일하는가』는 부도 직전의 중소기업에 간신히 취업해 하루하루 패잔병처럼 살던 젊은이가, 
+				<br>세계 100대 기업 중 하나가 된 첨단 전자부품 제조회사를 세워 연매출 16조 원 조직의 총수가 
+				<br>60여 년의 시간 동안 마음속에 차곡차곡 담아온 일과 삶에 대한 절절한 고민과 태도를 엮은 책이다. </p>
+		    <div class="btn_B">
+				<p>모든 중고상품보기
+				<br><span><a href="javascript:return false;">총 38개 ▶</a></span></p>
+			</div>
+			<p class="section3_Btext4">정가 16,000원 -> <span>할인가 11,200원 (10% 할인 + 5% 추가적립)</span></p>
+		</div>
+		 
+
+		<div class="section3_C">
+			<p class="book_C"><img src="images/section3/book_C.jpg" alt=""></p>
+				<p class="section3_Ctext1"><span>나미야 잡화점의 기적</span>  히가시노 게이고 / 현대문학</p>
+			<p class="section3_Ctext2">2012년 3월 일본에서 출간되어 큰 화제를 불러일으킨, 히가시노 게이고 최신작
+				<br>과거와 현재를 이어주는 기묘한 공간에서 벌어지는 가슴 훈훈한 이야기 !</p>
+			<p class="section3_Ctext3">나미야 잡화점은 30여 년간 비어 있던 오래된 가게이다.어느 날 이곳에 삼인조 좀도둑들이 숨어
+				<br>든다. 인적이 드문 외딴집인 줄로만 알았는데 난데없이 나미야 잡화점 주인 앞으로 의문의 편지
+				<br>한  통이 도착하고, 세 사람은 얼떨결에 편지를 열어보게 되는데...</p>
+			<div class="btn_C">
+				<p>모든 중고상품보기
+				<br><span><a href="javascript:return false;">총 210개 ▶</a></span></p>
+			</div>
+			<p class="section3_Ctext4">정가 14,800원 -> <span>할인가 10,600원 (10% 할인 + 5% 추가적립)</span></p>
+		</div>
+	</div>
+
+
+
+	<!--footer-->
+
+	<ul class="footer_top">
+		<li><a href="javascript:return false;">모바일북새록</a></li>
+		<li><a href="javascript:return false;">바로 찾는 바로드림</a></li>
+		<li><a href="javascript:return false;">중고장터 스마트비교</a></li>
+		<li><a href="javascript:return false;">북새록 마일리지카드</a></li>
+		<li><a href="javascript:return false;">매장안내</a></li>
+	</ul>
+
+	<div id="footer_middle_wrap">
+		<div class="footer_middle">
+			<ul class="footer_middle_1">
+				<li class="none"><a href="#">회사소개</a></li>
+				<li><a href="javascript:return false;">이용약관</a></li>
+				<li><a href="javascript:return false;">개인정보처리방침</a></li>
+				<li><a href="javascript:return false;">청소년보호정책</a></li>
+				<li><a href="javascript:return false;">협력사여러분</a></li>
+				<li><a href="javascript:return false;">제휴ㆍ제한</a></li>
+				<li><a href="javascript:return false;">광고문의</a></li>
+				<li><a href="javascript:return false;">채용정보</a></li>
+			</ul>
+			<div class="footer_middle_2">
+				<p><a href="javascript:return false;">FAMILY SITE ▲</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer_bottom_wrap">
+		<div class="footer_bottom">
+			<div class="footer_bottom_logo">
+				<img src="images/footer/footer_logo.png" alt="">
+			</div>
+			<div class="footer_bottom_text1">
+				<p>(주) 북새록   부산 중구 중앙동6가   대표이사:김민경
+						<br>사업자등록번호 : 012-345-67890
+						<br><span>대표전화 : 1544-0000 (발신자 부담전화</span>)  팩스 : 1544-000-0000 (지역번호공통)
+						<br>부산광역시 통신판매업신고번호 : 제 000호  ▶<a href="javascript:return false;">사업자정보확인</a>
+				</p>
+				<p>Copyright ⓒ <span>BOOKSALOK</span> Corp. All Rights Reserved.</p>
+			</div>
+			<div class="footer_bottom_text2">
+				<p>LG U+ 구매안전서비스   ▶<a href="javascript:return false;">서비스 가입 확인</a>
+						<br>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 LG유플러스의 구매
+						<br>안전서비스를 이용하실 수 있습니다.
+				</p>
+
+				<ul class="footer_bottom_isms">
+					<li><img src="images/footer/footer_isms.png" alt=""></li>
+					<li>정보보호관리체계
+						<br>ISMS 인증회득</li>
+					<li>[인증범위] 북새록 서비스 운영
+						<br>[유효기간] 2022.01.01. ~ 2025.12.31</li>
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+
+	<!--top-->
+<div class="top fixed">
+	<a href="#"><img src="images/top.png" alt="top"></a>
+</div>
+
+
+
+	</body>
+</html>
+
+
+
+
+
