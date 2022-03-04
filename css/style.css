@@ -243,7 +243,7 @@ h4{
 	font-weight: 600;
 	text-align: center;
 	line-height: 27px;
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .section3_Atext3{
 	font-size: 14px;
@@ -251,12 +251,13 @@ h4{
 	color:#888;
 	text-align: left;
 	letter-spacing: 2px;
+	padding-right: 35px ;
 }
 
 .section3_Atext4{
 	float: right;
 	width:568px;
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 600;
 	padding:10px 25px;
 	box-sizing: border-box;
@@ -325,7 +326,7 @@ h4{
 	font-weight: 600;
 	text-align: center;
 	line-height: 27px;
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .section3_Btext3{
 	font-size: 14px;
@@ -337,7 +338,7 @@ h4{
 .section3_Btext4{
 	float: right;
 	width:483px;
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 600;
 	padding:10px 0px;
 	box-sizing: border-box;
@@ -406,7 +407,7 @@ h4{
 	font-weight: 600;
 	text-align: center;
 	line-height: 27px;
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .section3_Ctext3{
 	font-size: 14px;
@@ -414,11 +415,12 @@ h4{
 	color:#888;
 	text-align: left;
 	letter-spacing: 2px;
+	padding-right: 46px;
 }
 .section3_Ctext4{
 	float: right;
 	width:568px;
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 600;
 	padding:10px 25px;
 	box-sizing: border-box;
