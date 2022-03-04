@@ -218,6 +218,10 @@ h4{
 	background-color: #f9f3e9;
 	margin-top: 40px;
 	position: relative;
+
+	text-align: left;
+	padding: 55px;
+	box-sizing: border-box;
 }
 .book_A{
 	position: absolute;
@@ -227,7 +231,6 @@ h4{
 .section3_Atext1{
 	font-size: 18px;
 	font-weight: 600;
-	padding: 70px 160px 0 0;
 }
 .section3_Atext1 span{
 	font-family: 'ChosunKm';
@@ -238,34 +241,38 @@ h4{
 .section3_Atext2{
 	font-size: 17px;
 	font-weight: 600;
-	padding: 50px 70px 40px 0;
-
+	text-align: center;
+	line-height: 27px;
+	padding: 50px 0;
 }
 .section3_Atext3{
 	font-size: 14px;
 	font-weight: 600;
 	color:#888;
 	text-align: left;
-	padding-left: 70px;
-	letter-spacing: 1px;
-	position:absolute;
+	letter-spacing: 2px;
 }
+
 .section3_Atext4{
+	float: right;
+	width:568px;
 	font-size: 19px;
 	font-weight: 600;
-	padding: 80px 0px 0px 110px;;
+	padding:10px 25px;
+	box-sizing: border-box;
 }
-
 .section3_Atext4 span{
 	color: #830310;
+}
 
+.btn_box{
+	padding-top:40px;
 }
 .btn_A{
-	position: relative;
-	top:113px;
-	left: 67px;
+	float: left;
 	width:132px;
 	height: 38px;
+	text-align: center;
 	background-color: #faf9fd;
 	border:1px solid #c9c9c9;
 	border-radius: 12px;
@@ -290,8 +297,12 @@ h4{
 	width:812px;
 	height:460px;
 	background-color: #f2f2f2;
-	margin:208px 0 208px 200px;
+	margin:210px 0 210px 210px;
 	position: relative;
+
+	text-align: left;
+	padding: 55px 35px 55px 140px ;
+	box-sizing: border-box;
 }
 .book_B{
 	position: absolute;
@@ -301,43 +312,48 @@ h4{
 .section3_Btext1{
 	font-size: 18px;
 	font-weight: 600;
-	padding-top:70px;
+
 }	
 .section3_Btext1 span{
 	font-family: 'ChosunKm';
 	font-size: 40px;
 	color: #4c5e7d;
-	letter-spacing: 28px;
+	letter-spacing: 25px;
 }
 .section3_Btext2{
 	font-size: 17px;
 	font-weight: 600;
-	padding: 50px 0px 40px 90px;
-	letter-spacing: 1px;
+	text-align: center;
+	line-height: 27px;
+	padding: 50px 0;
 }
 .section3_Btext3{
 	font-size: 14px;
 	font-weight: 600;
 	color:#888;
 	text-align: left;
-	padding-left:135px;
-	letter-spacing: 1px;
-	position:absolute;
+	letter-spacing: 2px;
 }
 .section3_Btext4{
+	float: right;
+	width:483px;
 	font-size: 19px;
 	font-weight: 600;
-	padding: 80px 0 0 244px;
+	padding:10px 0px;
+	box-sizing: border-box;
 }
 .section3_Btext4 span{
 	color: #830310;
 }
+
+.btn_box_B{
+	padding-top: 40PX;
+}
 .btn_B{
-	position: relative;
-	top:114px;
-	left:132px;
+	float: left;
 	width:132px;
 	height: 38px;
+	text-align: center;
 	background-color: #faf9fd;
 	border:1px solid #c9c9c9;
 	border-radius: 12px;
@@ -358,13 +374,16 @@ h4{
 
 
 
-
-
 .section3_C{
 	width:812px;
 	height:460px;
 	background-color: #f9f3e9;
+	margin-top: 40px;
 	position: relative;
+
+	text-align: left;
+	padding: 55px;
+	box-sizing: border-box;
 }
 .book_C{
 	position: absolute;
@@ -374,44 +393,45 @@ h4{
 .section3_Ctext1{
 	font-size: 18px;
 	font-weight: 600;
-	padding: 70px 65px 0 0;
 }
 .section3_Ctext1 span{
 	font-family: 'ChosunKm';
 	font-size: 40px;
 	color: #8b4c3c;
 	letter-spacing: 3px;
+	margin-right: 20px;
 }
 .section3_Ctext2{
 	font-size: 17px;
 	font-weight: 600;
-	padding: 50px 70px 40px 0;
-	letter-spacing: 1px;
+	text-align: center;
+	line-height: 27px;
+	padding: 50px 0;
 }
 .section3_Ctext3{
 	font-size: 14px;
 	font-weight: 600;
 	color:#888;
 	text-align: left;
-	padding-left: 70px;
-	letter-spacing: 1px;
-	position:absolute;
+	letter-spacing: 2px;
 }
 .section3_Ctext4{
+	float: right;
+	width:568px;
 	font-size: 19px;
 	font-weight: 600;
-	padding: 80px 0px 0px 110px;;
+	padding:10px 25px;
+	box-sizing: border-box;
 }
 .section3_Ctext4 span{
 	color: #830310;
 }
 
 .btn_C{
-	position: relative;
-	top:113px;
-	left: 67px;
+	float: left;
 	width:132px;
 	height: 38px;
+	text-align: center;
 	background-color: #faf9fd;
 	border:1px solid #c9c9c9;
 	border-radius: 12px;
